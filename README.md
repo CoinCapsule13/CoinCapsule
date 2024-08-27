@@ -1,1 +1,4 @@
 # CoinCapsule
+
+Deployed on Arbitrum
+0xD2BBE65717263C0e56C94c7404C86Cb1E1D9a2f1
