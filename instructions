@@ -1,0 +1,115 @@
+
+
+Here's an instruction manual for using functions in the  contract:
+
+ Freeze Wallet
+Function: freezeWallet(uint256 tokenId, string memory password)
+
+Description: Freezes the wallet associated with the specified tokenId, locking its contents.
+Usage: Only the wallet owner can call this function. Provide the tokenId and a password to secure the wallet.
+Example: freezeWallet(1, "securepassword")
+
+
+
+ Unfreeze Wallet
+Function: unfreezeWallet(uint256 tokenId, string memory password)
+
+Description: Unfreezes the wallet, allowing access to its contents.
+Usage: Only the wallet owner can call this function. Provide the correct tokenId and password to unlock the wallet.
+Example: unfreezeWallet(1, "securepassword")
+
+
+Change Wallet Label
+Function: changeLabel(uint256 tokenId, string memory newLabel)
+
+Description: Updates the label for the specified wallet.
+Usage: Only the wallet owner can call this function. Provide the tokenId and the new label.
+Example: changeLabel(1, "New Label")
+
+
+
+Deposit ETH
+Function: depositETH(uint256 tokenId)
+
+Description: Deposits ETH into the specified wallet.
+Usage: Only the wallet owner can call this function. Send ETH along with the tokenId.
+Example: depositETH(1) payable with 1 ETH
+
+
+
+
+Withdraw ETH
+Function: withdrawETH(uint256 tokenId, uint256 amount)
+
+Description: Withdraws a specified amount of ETH from the wallet.
+Usage: Only the wallet owner can call this function. Provide the tokenId and amount to withdraw.
+Example: withdrawETH(1, 0.5 ether)
+
+
+
+
+Deposit ERC20 Tokens
+Function: depositERC20(uint256 tokenId, address token, uint256 amount)
+
+Description: Deposits ERC20 tokens into the specified wallet.
+Usage: Only the wallet owner can call this function. Provide the tokenId, ERC20 token address, and amount.
+Example: depositERC20(1, "0xTokenAddress", 100)
+
+
+
+
+Withdraw ERC20 Tokens
+Function: withdrawERC20(uint256 tokenId, address token, uint256 amount)
+
+Description: Withdraws a specified amount of ERC20 tokens from the wallet.
+Usage: Only the wallet owner can call this function. Provide the tokenId, ERC20 token address, and amount.
+Example: withdrawERC20(1, "0xTokenAddress", 100)
+
+
+
+
+Deposit ERC721 Tokens
+Function: depositERC721(uint256 tokenId, address token, uint256 nftId)
+
+Description: Deposits an ERC721 NFT into the specified wallet.
+Usage: Only the wallet owner can call this function. Provide the tokenId, ERC721 token address, and NFT ID.
+Example: depositERC721(1, "0xNFTAddress", 123)
+
+
+
+
+Withdraw ERC721 Tokens
+Function: withdrawERC721(uint256 tokenId, address token, uint256 nftId)
+
+Description: Withdraws a specified ERC721 NFT from the wallet.
+Usage: Only the wallet owner can call this function. Provide the tokenId, ERC721 token address, and NFT ID.
+Example: withdrawERC721(1, "0xNFTAddress", 123)
+
+
+
+Transfer Token Ownership
+Function: transferToken(uint256 tokenId, address to)
+
+Description: Transfers the ownership of the specified token and its associated wallet to another address.
+Usage: Only the wallet owner can call this function. Provide the tokenId and recipient's address.
+Example: transferToken(1, "0xRecipientAddress")
+
+
+
+
+Get Token IDs
+Function: getTokenIds(address owner)
+
+Description: Returns the list of tokenIds owned by a specific address.
+Usage: Can be called by anyone. Provide the owner's address.
+Example: getTokenIds("0xOwnerAddress")
+
+
+
+
+Get Wallet Contents
+Function: getWalletContents(uint256 tokenId)
+
+Description: Returns the details of the wallet associated with a specific tokenId.
+Usage: Can be called by anyone. Provide the tokenId.
+Example: getWalletContents(1)
