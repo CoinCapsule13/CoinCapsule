@@ -1,3 +1,3 @@
 # CoinCapsule
 
- a silly mistake had to postpone 
+Deployed on Arbitrum 0x1Bb04906C13B7B302B4d516F3E71AEC061E0dA41
