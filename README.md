@@ -1,3 +1,3 @@
 # CoinCapsule
 
-Deployed on Arbitrum 0x1Bb04906C13B7B302B4d516F3E71AEC061E0dA41
+try me on arbitrum at https://66d9f1aa395ede48409d8ba4--lovely-valkyrie-46bfb0.netlify.app/ 
